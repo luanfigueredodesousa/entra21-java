@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- HTML inicial -->
+    <head>
+<title>Primeira página html</title>
+<meta charset="UTF-8">
+<meta name = "description" content = "primeira página">
+<meta name = "keywords" content="HTML,CSS,JavaScript">
+<meta name = "author" content = "Luan">
+<meta name = "viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+
+    <body>
+ <h1>Outer Wilds</h1>
+<p>Travel</p>
+<img width="260" height="360" src="https://c.tenor.com/v5lxzTqe79AAAAAd/outer-wilds.gif"/>
+<p></p>
+<!--<a href="https://www.mobiusdigitalgames.com/outer-wilds.html" target="_parent">Click here</a>-->
+<a href="https://gamernews.com.br/wp-content/uploads/2021/08/gamernews-outerwilds-echoes-of-the-eye.jpg"><img width="260" height="160"src ="https://gamernews.com.br/wp-content/uploads/2021/08/gamernews-outerwilds-echoes-of-the-eye.jpg"></a>
+
+<h4>Tarefas diárias</h4>
+    <ol type ="A">
+        <li>Lavar louça</li>
+        <li>Molhar plantas</li>
+        <li>Estudar</li>
+            <ul>
+                <li>Java</li>
+                <li>MySQL</li>
+                <ul>
+                    <li>Texto</li>
+                </ul>
+            </ol>
+        </li>
+    </ol>
+
+<table>
+    <caption>Monthly savings</caption>
+   <thead>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Febuary</td>
+                    <td>$80</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td><small>sum $180</small></td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
