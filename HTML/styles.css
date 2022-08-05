@@ -1,0 +1,12 @@
+body{
+    background-color: #f1f1f1;
+    /*backgorund-color; blueviolet. */
+}
+
+p{
+    color: red;
+    margin-top: 0; /*retirar a margem superior*/
+}
+#par-gr{
+    color: green;
+}
