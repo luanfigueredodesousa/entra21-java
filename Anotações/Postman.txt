@@ -1,0 +1,5 @@
+Get - Busca informações
+Post - Criar registros (Login)
+Put - Atualização para informações || Se não passar identificador ele criando (Elementos já cadastrados)
+Patch (?) - Só vai atualizar
+Delete - Ele apaga 

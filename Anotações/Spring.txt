@@ -1,0 +1,10 @@
+HelloWorld||RestController|| - Toda requisição vai bater - @RestController
+''	||Service||
+''	||Entity||
+''	||Repository||
+''	||DTO|| - Data transfer object
+''	||UseCase||
+
+123
+
+Padrão mvc --Importante

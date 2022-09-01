@@ -1,0 +1,52 @@
+HTML:5 -- gerar o código novo
+
+Doctype HTML -- Tipo do documento <html> </html>
+ <html lang ="pt-br"> -- Informa o idioma da página pro tradutor google
+
+<head> -- oq é mostrado na aba do google e importamos estilos aqui
+
+Comentário: 
+abre: <!-- 
+fecha: --> 
+
+<title>Primeira página html </title>
+
+Meta dados = <meta> -- Colocar KeyWords, Charset = "UTF-8" - td conteudo do body será em utf-8
+EX: 
+<meta name = "description" content="texto"> (Max de 160 caracteres - descrição google)
+<meta name="keywords" content="HTML,CSS,JavaScript"> -- algoritmo do google
+<meta name="author" content="Luan"
+<meta name ="viewport"
+content ="width=device-width,initial-scale=1.0" -- pego o tamanho da tela do usuario 
+
+<script> -- td que for de lógica que nossa página faz 
+
+<noscript> -- avisa q precisa de java
+
+<link> -- acessar recurso externo -- <<a href=""></a>
+target="_blank" -- ao abrir o link ele vai abrir uma nova aba
+target="_parent" - abrir na mesma pagina
+target="_top" - abrir na ultima pagina web que ele conseguir chegar
+
+<base> --ir direto para o link
+
+<body>
+h1 até h6 são títulos para o body
+</body>
+
+<p>Paragrafo</p> - consigo estilizar o texto
+<img src="endereço da imagem"/>
+
+width = largura
+height = altura
+
+<ol> Lista = A,B,C   1,2,3  
+<ul> Lista = º
+<li> lista item 
+
+
+<table> -- tabela
+<tr> -- linha da tabela //Pra cada linha nova preciso add +tr
+<th> -- coluna com cabeçalho
+<td> -- table data
+<thead> -- Identifica que é o cabeçalho

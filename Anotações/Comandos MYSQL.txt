@@ -1,0 +1,81 @@
+mysqld --console
+
+CREATE -- 
+
+
+
+
+
+
+create table item (
+id bigint not null primary key auto_increment,
+titulo varchar(100) not null,
+genero varchar(100) not null,
+valor_venda decimal (6,2) not null, /*esse numero quebrado vai até 6 posição com duas casas decimais = 000000,00 até 999999,99*/
+valor_locacao decimal (6,2) not null,
+emprestado bit(1) not null default b'0'
+);
+
+create table dvd(
+id bigint not null primary key auto_increment,
+diretor varchar(250) not null,
+duracao time not null,
+ano_lancamento int not null,
+id_item bigint not null, 
+foreign key item(id_item) references item(id) 
+);
+
+create table livro (
+id bigint not null auto_increment primary key,
+autor varchar(250) not null,
+qtde_paginas int not null,
+ano_publicacao int not null,
+edicao int not null,
+id_item bigint not null,
+foreign key (id_item) references item(id)
+);
+
+create table Avaliacao (
+id bigint not null primary key auto_increment,
+nome_avaliador varchar(100) not null,
+rating decimal(6,2) not null, 
+comentario varchar(250), /*é opcional por isso pode ser null*/
+id_item bigint not null,
+foreign key (id_item) references item(id)
+);
+
+
+Colunas:
+
+create table genero(
+id bigint not null primary key auto_increment,
+nome varchar(50) not null
+);
+
+-- feito
+create table genero_item (
+id_genero bigint not null,
+id_item bigint not null,
+primary key (id_genero, id_item),
+foreign key (id_genero) references genero(id),
+foreign key (id_item) references item(id)
+);
+
+alter table item drop column genero;
+
+insert into dvd (diretor, duracao, ano_lancamento, id_item)
+values ('Andrew Adamson, Vicky jenson', '1:29',2001,3);
+
+
+
+insert into item(titulo, valor_venda, valor_locacao)
+values('A batalha do apocalipse',56.8, 12.0);
+
+insert into livro (autor,qtde_paginas, ano_publicacao, edicao, id_item)
+values
+('Eduardo Spohr',586, 2010, 1, 6);
+
+insert into genero_item (id_genero, id_item)
+values(5,6);
+
+insert into genero (nome) values ('Suspense');
