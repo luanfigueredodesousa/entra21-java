@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldRestController {
     @GetMapping("/")
 public String helloWorld(){
-    return "helloWorld";
+
+        return "helloWorld";
 }
 @PostMapping("/")
     public String greet(@RequestBody String user){

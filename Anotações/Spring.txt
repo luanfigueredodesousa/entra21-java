@@ -5,6 +5,64 @@ HelloWorld||RestController|| - Toda requisição vai bater - @RestController
 ''	||DTO|| - Data transfer object
 ''	||UseCase||
 
+
+HelloWorld||RestController|| - Toda requisição vai bater - @RestController
+''	||Service||
+''	||Entity||
+''	||Repository||
+''	||DTO|| - Data transfer object
+''	||UseCase||
+
 123
+RestController() () -- é caminho para endPoint 
+
 
 Padrão mvc --Importante
+Requisições HTTP --importante
+JPA -- Banco de dados para JSON
+
+@GetMapping - mapeando de caminho de endpoint - para o sping localizar
+@PostMapping - criar
+@RequestBody - informando o spring que estou esperando um body na requisição
+@Table (name = "franquia") - para o jpa localizar -- qual tabela de banco de dados é 
+@Id - para identificar a primary key
+@GeneratedValue (strategy = GenerationType.IDENTITY)- é o auto increment  --precisa colocar sempre após o @ID -- 
+@Entity - informa pra jpa que a classe java é um mapeamento/registro de banco de dados
+@Data -- Gera Getter e setter pra todos os atributos 
+@Repository - crio um repositorio (é uma classe generica, preciso especificar <Classe, classe do identificador> -- EX: @Repository public interface FranquiaRepository extends JpaRepository<FranquiaEntity,Long> { }
+@RestController - identifico que é um restcontroller 
+@RequestMapping("/franquia") - mapeamento de qualquer coisa 
+@AutoWired - Spring passa em tds as classes com essa annotation, faz com que sempre exista um valor
+@Request
+@PathVariable -- 
+@PutMapping
+
+
+pom.xml -- toda conf do meu projeto 
+
+
+Maven - Erros de dependência
+-- Clean
+-- install
+
+Project Lombok -- Usar Getter e setter por padrao sem precisar definir (usando metadados) -- coloco no pom.xml nas dependencias
+
+application.proprieties
+
+
+char ,txt = String
+dados bigint = /se n vai passar da capacidade
+
+nullable = false, impedir que o campo fique vazio
+
+MVC
+Model -- banco de dados 
+View  -- processamento (reposiorios, serviços)
+Controller -- Porta de entreda pra conversar com a API, "endpoint"
+
+Crio uma interface -- pra o spring poder atuar - crio um repositorio
+
+injeção de dependencias
+@AutoWired
+Spring faz toda possoogar 
+lombook gera um construtor
